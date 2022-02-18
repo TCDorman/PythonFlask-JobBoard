@@ -19,8 +19,13 @@
           {% for _ in range(0, review['rating']): %}
             <span class="fa fa-star checked"></span>
           {% endfor %}
-
           <div class="content">
+            <p>
+                <strong>{{ review['title'] }}</strong>
+                <small>{{ review['status'] }}</small>
+                <small>{{ review['date'] }}</small>
+                {{ review['revies'] }}
+            </p>
           </div>
         </div>
       </article>
