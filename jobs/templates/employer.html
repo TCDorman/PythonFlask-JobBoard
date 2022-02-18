@@ -16,6 +16,10 @@
         <div class="media-left">
         </div>
         <div class="media-content">
+          {% for _ in range(0, review['rating']): %}
+            <span class="fa fa-star checked"></span>
+          {% endfor %}
+
           <div class="content">
           </div>
         </div>
