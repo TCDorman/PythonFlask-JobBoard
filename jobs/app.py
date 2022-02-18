@@ -11,6 +11,7 @@ def open_connection():
     if connection == None: 
         connection = g._connection = sqlite3.connect(PATH)
     connection.row_factory = sqlite3.Row
+    return connection
 
 @app.route("/")
 @app.route("/jobs")
